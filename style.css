@@ -230,3 +230,54 @@ p {
   color: #4a2f5a;
   font-weight: 600;
 }
+
+/* ================== Modal ================== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal.show {
+  display: flex;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.modal-content {
+  width: 95%;
+  max-width: 700px;
+  background: #121214;
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid #333;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: popIn 0.45s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* close button */
+.modal-close {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: transparent;
+  border: 2px solid #4a2f5a;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
