@@ -133,7 +133,6 @@ p {
   border-radius: 16px;
 }
 
-/* لون نصوص الخدمات بنفس زر "انضم الآن" */
 .service h3 {
   color: #4a2f5a;
   margin: 16px 0 10px;
@@ -163,7 +162,6 @@ p {
   background: #1a1c1e;
 }
 
-/* Animation */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -175,7 +173,6 @@ p {
   transform: translateY(0);
 }
 
-/* Order Form */
 .order-form {
   max-width: 600px;
   margin: auto;
@@ -233,4 +230,3 @@ p {
   color: #4a2f5a;
   font-weight: 600;
 }
-
